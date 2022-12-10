@@ -300,12 +300,7 @@ b span {
 }
 
 .button.lgn {
-    position: absolute;
-    left: 0;
-    width: 250px !important;
     text-align: center;
-    margin-left: 8px !important;
-    font-size: 18px !important;
 }
 
 .button.lgn .material-icons {
@@ -337,7 +332,8 @@ b span {
 }
 
 .switch {
-    margin-bottom: 0;
+    /* margin-top: -5px; */
+    margin-bottom: 0px;
 }
 
 .slidecontainer {
@@ -1464,6 +1460,12 @@ input:checked+.optCheck {
     visibility: visible;
 }
 
+#ingameFPS::after {
+    content: " FPS";
+    font-size: 18px !important;
+    color: var(--accent-color);
+}
+
 #pingDisplay {
     text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
@@ -1902,11 +1904,12 @@ input:checked+.optCheck {
 /* ammo */
 
 #ammoDisplay {
+    box-shadow: 1px 1px 10px black;
     position: fixed;
     background-color: transparent;
     background-image: url(https://dummyimage.com/1x1/ffffff/ffffff.png);
     transform: none;
-    width: 50px;
+    width: 55px;
 	height: 4px;
 	top: calc(50% + 35px);
 	left: calc(50% - 25px);
@@ -1914,6 +1917,10 @@ input:checked+.optCheck {
     padding-top: 0;
     padding-left: 0;
     border-radius: 0;
+}
+
+#ammoDisplay[style="background-size: 0%; display: inline-block;"] {
+    box-shadow: unset;
 }
 
 #ammoVal {
@@ -2171,7 +2178,14 @@ input:checked+.optCheck {
 	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
+#pingText::after {
+    content: " MS";
+    font-size: 18px !important;
+    color: var(--accent-color);
+}
+
 #pingIcon {
+    font-size: 0 !important;
 	color: var(--accent-color) !important;
 	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
@@ -2181,10 +2195,26 @@ input:checked+.optCheck {
 	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
-#uiBase.onGame::before {
+#bottomRight::before {
     content: url(https://cdn.discordapp.com/attachments/875663483809722388/991318083740381234/ax_logo_shadow.png?size=4096);
     position: fixed;
     left: 50%;
     bottom: -160px;
     transform: translate(-50%) scale(0.3);
+}
+
+#mainLogoFace {
+    display: none;
+}
+
+#altManagerBtn {
+    position: fixed;
+    left: 153px;
+    width: 155px !important;
+}
+
+#logoutBtn {
+    position: fixed;
+    left: 328px;
+    width: 155px !important;
 }
