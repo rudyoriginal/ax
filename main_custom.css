@@ -1945,7 +1945,18 @@ input:checked+.optCheck {
 /* other hud elements */
 
 #reloadMsg {
+    font-size: 0 !important;
+    position: fixed;
+    left: 50%;
+    bottom: calc(50% - 150px);
+    border: none !important;
     background: transparent !important;
+}
+
+#reloadMsg::before {
+    content: "Reload";
+    font-size: 20px !important;
+    color: var(--accent-color);
 }
 
 #weapDisplay {
