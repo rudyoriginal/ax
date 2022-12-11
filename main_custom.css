@@ -2218,3 +2218,7 @@ input:checked+.optCheck {
     left: 328px;
     width: 155px !important;
 }
+
+.leaderItem > img {
+    margin-top: 1px !important;
+}
