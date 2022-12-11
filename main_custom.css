@@ -146,8 +146,8 @@ b span {
 #mainLogo {
     position: relative;
     bottom: 35px;
-    transform: scale(1.5);
-    content: url(https://cdn.discordapp.com/attachments/875663483809722388/991318083740381234/ax_logo_shadow.png?size=4096);
+    transform: scale(1);
+    content: url(https://cdn.discordapp.com/attachments/852817363409960960/1051373850249662474/074fd31833dc795.png);
 }
 
 /* popups */
