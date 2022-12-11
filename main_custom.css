@@ -2214,6 +2214,14 @@ input:checked+.optCheck {
     transform: translate(-50%) scale(0.3);
 }
 
+#bottomRight::after {
+    content: url(https://cdn.discordapp.com/attachments/852817363409960960/1051373850249662474/074fd31833dc795.png);
+    position: fixed;
+    left: calc(50% + 25px);
+    bottom: -180px;
+    transform: translate(-50%) scale(0.3);
+}
+
 #mainLogoFace {
     display: none;
 }
